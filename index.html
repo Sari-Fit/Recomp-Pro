@@ -82,8 +82,22 @@ input[type=checkbox]{width:24px;min-height:24px;accent-color:var(--acc)}
 <div id="modal" onclick="closeModal()"></div>
 <div id="toast"></div>
 <div id="timer"></div>
-<script src="app1.js"></script>
-<script src="app2.js"></script>
-<script src="app3.js"></script>
+<script>
+function showBootError(msg){var v=document.getElementById('view');if(v&&v.querySelector('.spin'))v.innerHTML='<div class="card"><b class="red">تعذر تشغيل التطبيق</b><div class="sm mut" style="direction:ltr;text-align:left;margin-top:8px">'+String(msg).replace(/</g,'&lt;')+'</div><div class="sm mut" style="margin-top:8px">أرسل لقطة شاشة من هذه الرسالة.</div></div>'}
+window.addEventListener('error',function(e){showBootError((e.message||'Error')+' @ '+String(e.filename||'').split('/').pop()+':'+(e.lineno||''))});
+window.addEventListener('unhandledrejection',function(e){showBootError(e.reason&&e.reason.message?e.reason.message:String(e.reason))});
+</script>
+<script src="p1.js"></script>
+<script src="p2.js"></script>
+<script src="p3.js"></script>
+<script src="p4.js"></script>
+<script src="p5.js"></script>
+<script src="p6.js"></script>
+<script src="p7.js"></script>
+<script src="p8.js"></script>
+<script src="p9.js"></script>
+<script src="p10.js"></script>
+<script src="p11.js"></script>
+<script src="p12.js"></script>
 </body>
   </html>
