@@ -1,0 +1,16 @@
+{
+  "name": "RECOMP PRO",
+  "short_name": "RECOMP",
+  "description": "Build Muscle. Lose Fat. Stay Consistent.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+    }
